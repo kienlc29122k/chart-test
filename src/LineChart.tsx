@@ -64,11 +64,11 @@ export function LineChart() {
             ticks: {
               color: "rgba(112, 122, 143, 1)",
               backdropColor: "red",
-              backdropPadding: 10,
             },
+            border: { color: "#D9DEF2" },
           },
           y: {
-            border: { dash: [10] },
+            border: { dash: [10], color: "#D9DEF2", display: false },
             ticks: { color: "rgba(112, 122, 143, 1)", maxTicksLimit: 3 },
           },
         },

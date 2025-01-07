@@ -70,6 +70,7 @@ export function BarChart() {
               backgroundColor: "#1E2334",
               titleAlign: "center",
               bodyAlign: "center",
+
               callbacks: {
                 title: function (context) {
                   return context[0].label;
@@ -85,7 +86,7 @@ export function BarChart() {
           },
           scales: {
             x: {
-              border: { dash: [10] },
+              border: { dash: [10], color: "#E1E4EA" },
               ticks: { color: "rgba(112, 122, 143, 1)" },
             },
             y: {
@@ -93,7 +94,7 @@ export function BarChart() {
                 maxTicksLimit: 4,
                 color: "rgba(112, 122, 143, 1)",
               },
-              border: { dash: [10] },
+              border: { dash: [10], color: "#E1E4EA" },
               grid: { display: false },
               type: "linear",
             },
@@ -106,9 +107,7 @@ export function BarChart() {
               barPercentage: 1,
               categoryPercentage: 1,
               label: "Dataset 1",
-              // borderRadius: { topRight: 8 },
               data: labels.map(() => faker.number.int({ min: 0, max: 100 })),
-              // backgroundColor: "rgba(255, 99, 132, 0.5)",
               backgroundColor: ["#EBEBFF", "#DBDDFF", "#C5C9FF", "#9EA4FF"],
             },
           ],

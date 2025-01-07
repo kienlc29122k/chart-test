@@ -53,6 +53,7 @@ export function MultipleLinesChart() {
             position: "nearest",
             xAlign: "center",
             yAlign: "bottom",
+            usePointStyle: true,
           },
           datalabels: {
             display: false,
@@ -61,15 +62,13 @@ export function MultipleLinesChart() {
         scales: {
           x: {
             grid: { display: false },
-            ticks: {
-              color: "rgba(112, 122, 143, 1)",
-              backdropColor: "red",
-              backdropPadding: 10,
+            border: {
+              color: "#E1E4EA",
             },
           },
           y: {
-            border: { dash: [10] },
-            ticks: { color: "rgba(112, 122, 143, 1)", maxTicksLimit: 3 },
+            border: { dash: [10], color: "#E1E4EA", display: false },
+            ticks: { maxTicksLimit: 3 },
           },
         },
       }}
